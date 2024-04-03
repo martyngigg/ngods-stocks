@@ -1,24 +1,24 @@
 resources:
   dbt:
     config:
-      project_dir: ../dbt/bronze
-      profiles_dir: ../dbt
+      project_dir: /var/lib/ngods/dbt/bronze
+      profiles_dir: /var/lib/ngods/dbt
 ops:
   dbt_bronze_run_op:
     config:
-      project_dir: ../dbt/bronze
+      project_dir: /var/lib/ngods/dbt/bronze
   dbt_silver_run_op:
     config:
-      project_dir: ../dbt/silver
+      project_dir: /var/lib/ngods/dbt/silver
   dbt_gold_run_op:
     config:
-      project_dir: ../dbt/gold
+      project_dir: /var/lib/ngods/dbt/gold
   dbt_bronze_test_doc_sources_op:
     config:
-      project_dir: ../dbt/bronze
+      project_dir: /var/lib/ngods/dbt/bronze
   dbt_silver_test_doc_sources_op:
     config:
-      project_dir: ../dbt/silver
+      project_dir: /var/lib/ngods/dbt/silver
   dbt_gold_test_doc_sources_op:
     config:
-      project_dir: ../dbt/gold
+      project_dir: /var/lib/ngods/dbt/gold
